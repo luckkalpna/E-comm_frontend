@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SignUp from './components/SignUp';
+import Login from './components/Login';
 import PrivateComponent from './components/PrivateComponent';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Navbar />
       <Routes>
-        
+
         <Route element={<PrivateComponent />}>
         <Route path='/' element={<h1>Product Listing Component</h1>} />
         <Route path='/add' element={<h1>Add Product Component</h1>} />
@@ -21,6 +22,7 @@ function App() {
         </Route>
 
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       </BrowserRouter>
       <Footer />
