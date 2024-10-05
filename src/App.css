@@ -1,0 +1,50 @@
+.nav-ul{
+  margin: 0;
+  padding: 15px;
+  background-color: skyblue;
+}
+
+.nav-ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.register{
+  margin-left: 30%;
+  align-items: center;
+}
+
+.inputfields{
+  display: block;
+  margin: 25px 0;
+  padding: 15px;
+  width: 350px;
+  border: 1px solid skyblue;
+  border-radius: 3px;
+}
+
+.signup-btn{
+  text-align: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 15px;
+  width: 380px;
+  border: none;
+  background-color: skyblue;
+  border-radius: 3px;
+  cursor: pointer;
+}
