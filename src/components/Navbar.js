@@ -12,22 +12,24 @@ const Navbar = () =>{
   }
     return(
         <div>
-            <ul className="nav-ul">
+          <img className="logo" src="https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074075.jpg" alt="logo" />
+          { auth ? <ul className="nav-ul">
                 <li><Link to="/">Product</Link></li>
                 <li><Link to="/add">Add Product</Link></li>
                 <li><Link to="/update">Update Product</Link></li>
                 <li><Link to="/profile">Profile</Link></li>
-                {/* <li>{ auth?<Link onClick={logout} to="/signup">Logout</Link> :
-                <Link to="/signup">SignUp</Link> }</li>
-                <li><Link to="/login">Login</Link></li> */}
-                {
-                  auth ? <li><Link onClick={logout} to="/signup">Logout</Link></li>
-                  :<>
-                <li> <Link to="/signup">SignUp</Link></li>
-                <li><Link to="/login">Login</Link></li>
-                  </>
-                }
-            </ul>
+                <li><Link onClick={logout} to="/signup">Logout ({JSON.parse(auth).name})</Link></li>
+                </ul>
+                :
+                <ul  className="nav-ul nav-right">
+                  <li> <Link to="/signup">SignUp</Link></li>
+                  <li><Link to="/login">Login</Link></li>
+                </ul>
+            }
+
+
+
+
         </div>
     )
 }
