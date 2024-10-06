@@ -36,7 +36,7 @@
   background-color: skyblue;
 }
 
-.register{
+.register, .add-product{
   margin-left: 30%;
   align-items: center;
 }
@@ -50,7 +50,7 @@
   border-radius: 3px;
 }
 
-.signup-btn{
+.signup-btn, .add-product-btn{
   text-align: center;
   align-items: center;
   margin: 25px 0;
