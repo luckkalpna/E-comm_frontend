@@ -50,6 +50,14 @@
   border-radius: 3px;
 }
 
+.invalid-input{
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-left: 5px;
+  display: block;
+}
+
 .signup-btn, .add-product-btn{
   text-align: center;
   align-items: center;
