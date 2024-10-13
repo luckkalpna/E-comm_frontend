@@ -58,6 +58,15 @@
   display: block;
 }
 
+.search-input{
+  width: 400px;
+  margin: 20px;
+  height: 40px;
+  border: 1px solid skyblue;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
 .signup-btn, .add-product-btn, .update-product-btn{
   text-align: center;
   align-items: center;
